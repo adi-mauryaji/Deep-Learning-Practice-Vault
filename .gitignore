@@ -3,3 +3,4 @@ dl-venv/
 __pycache__/
 .ipynb_checkpoints/
 .directory
+linkedin/
