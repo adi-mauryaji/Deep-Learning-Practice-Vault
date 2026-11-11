@@ -1,6 +1,6 @@
 # Breast Cancer Classification with a Neural Network
 
-A small neural network that reads 30 measurements of cell nuclei from a breast-lump biopsy image and predicts whether the tumour is malignant or benign. The Streamlit app lets you pick a test record the network never saw during training, move any measurement, and see the prediction change.
+A small neural network that reads 30 measurements of cell nuclei from a breast-lump biopsy image and predicts whether the tumour is malignant or benign. The Streamlit app lets you pick a test case the network never saw during training, move any measurement, and watch the prediction change. A live diagram shows the signal flowing through all 30 inputs, 20 hidden neurons and 2 outputs.
 
 **Live app:** _add the Streamlit link here after deploying_
 
@@ -34,6 +34,7 @@ The app also shows which measurements pushed each prediction. For every measurem
 | `classification.ipynb` | The notebook where I built and explored the model |
 | `train.py` | Trains the same network and saves `model.keras`, `scaler.pkl` and `report.json` |
 | `app.py`, `style.css` | The Streamlit app |
+| `.streamlit/config.toml` | This app's theme (Streamlit reads it from the app's own folder) |
 | `requirements.txt` | Pinned package versions for the app |
 
 ## Run it locally
@@ -48,7 +49,5 @@ pip install -r Breast-Cancer-Classification-using-NN/requirements.txt
 python Breast-Cancer-Classification-using-NN/train.py      # optional, the trained files are already here
 streamlit run Breast-Cancer-Classification-using-NN/app.py
 ```
-
-Run the commands from the repository root so Streamlit picks up the theme in `.streamlit/config.toml`.
 
 This is a learning project, not a medical tool.
